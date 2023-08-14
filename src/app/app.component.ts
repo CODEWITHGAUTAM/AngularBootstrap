@@ -6,15 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Send Data Child to Parent Component';
-  data=10;
-  name="Gautam Singh Rajput";
-  address="Saharsa";
+  title = 'Reusable Component';
+  userDetails=[
+    {
+      name:'Anil Sidhu',email:'anil@test.com'
 
-  updateChild()
-  {
-    this.data=Math.floor(Math.random()*10);
-  }
+
+    },{
+      name:'Gautam Singh Rajput',email:'gautam@rajput.com'
+    }
+  ]
+
+  
 
 
   
