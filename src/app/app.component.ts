@@ -14,6 +14,12 @@ export class AppComponent {
 
     },{
       name:'Gautam Singh Rajput',email:'gautam@rajput.com'
+    },
+    {
+      name:'Raushan Singh Rajput',email:'raushan@rajput.com'
+    },
+    {
+      name:'Love Singh Rajput',email:'love@rajput.com'
     }
   ]
 
