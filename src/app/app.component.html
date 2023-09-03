@@ -1,9 +1,15 @@
 <h1>{{title}}</h1>
 <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
     <input type="text" name="user" id="" placeholder="Enter Name" formControlName="user">
-    <br><br>
+    <br>
+    <span *ngIf="user && user.invalid && user.touched">This field is Invalid</span>
+    <br>
+   
+    
     <input type="password" name="password" id="" placeholder="Enter password" formControlName="password">
-    <br><br>
-    <button>Login</button>
+    <br>
+    <span *ngIf="password && password.invalid && password.touched">This field is invalid</span>
+    <br>
+    <button [disabled]="loginForm.invalid">Login</button>
 
 </form>
