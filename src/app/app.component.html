@@ -1,3 +1,9 @@
 <h1>{{title}}</h1>
-<input type="text" [(ngModel)]="name">
-<h3>{{name}}</h3>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" name="user" id="" placeholder="Enter Name" formControlName="user">
+    <br><br>
+    <input type="password" name="password" id="" placeholder="Enter password" formControlName="password">
+    <br><br>
+    <button>Login</button>
+
+</form>

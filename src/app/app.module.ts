@@ -4,10 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {FormsModule} from '@angular/forms'
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { UsdInrPipe } from './pipes/usd-inr.pipe'
+
 @NgModule({
   declarations: [
     AppComponent,
+    UsdInrPipe,
     
     
          
@@ -15,7 +18,7 @@ import {FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
